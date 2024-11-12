@@ -1,0 +1,402 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A5568;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E2E8F0;
+}
+
+/* Marcos para secciones */
+.content-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4A5568;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2D3748;
+}
+
+/* Iconos de redes sociales */
+/* Estilos de los iconos sociales con letras */
+.social-icons {
+    margin-top: 1em;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 15px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+    line-height: 50px; /* Alineación vertical */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Colores específicos para cada red social */
+.icon.facebook:hover {
+    background-color: #3b5998; /* Azul de Facebook */
+}
+
+.icon.youtube:hover {
+    background-color: #FF0000; /* Rojo de YouTube */
+}
+.icon.google:hover {
+    background-color: #f7d61c; /* Rojo de YouTube */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2D3748;
+    color: #E2E8F0;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+/* Sección de contacto */
+.contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 10px;
+    color: #4A5568;
+}
+
+.contacto p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #4A5568;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4A5568;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4A5568;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2D3748;
+}
+/* Estilo para el video */
+.video {
+    max-width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video h2 {
+    color: #4A5568;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.video-frame {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.beneficio-frame1{
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:1 */
+    height: 0;
+    overflow: hidden;
+    max-width: 50%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.beneficio-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+/* Estilo para la sección con video */
+.content-section.reverse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.text-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.text-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-content button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el marco del video */
+.video-frame {
+    flex: 1;
+    max-width: 500px; /* Ajusta el ancho máximo del video */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* Estilo del iframe del video */
+.video-frame iframe {
+    width: 100%;
+    height: 280px; /* Ajusta la altura del video */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .content-section.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-frame {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+.video1 {
+    max-width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video h2 {
+    color: #4A5568;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.video-frame1 {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+/*imagen3*/
+.video2 {
+    max-width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video h2 {
+    color: #4A5568;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.video-frame2 {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+}

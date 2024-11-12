@@ -1,0 +1,138 @@
+/* Reset de márgenes y padding de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #009688; /* Verde azulado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+}
+
+/* Estilo para la sección de introducción */
+#intro {
+    background-color: #e0f2f1; /* Verde muy claro */
+    padding: 40px;
+    text-align: center;
+    border-bottom: 2px solid #009688;
+}
+
+#intro h2 {
+    font-size: 2em;
+    color: #009688;
+    margin-bottom: 15px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilo para la sección de documentales */
+.documentales-section {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.documentales-section h2 {
+    font-size: 2.5em;
+    color: #009688;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los items de documentales */
+.documental-item {
+    background-color: #fafafa; /* Gris muy claro */
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #009688;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.documental-item h3 {
+    font-size: 1.8em;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.documental-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el video dentro de cada item */
+.video-frame {
+    max-width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+}
+
+.video-frame iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Efecto de hover sobre los items de documentales */
+.documental-item:hover {
+    background-color: #e0f2f1; /* Verde claro */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #intro h2 {
+        font-size: 1.8em;
+    }
+
+    .documentales-section h2 {
+        font-size: 2em;
+    }
+
+    .documental-item h3 {
+        font-size: 1.5em;
+    }
+
+    .documental-item p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,119 @@
+    /* Reset de los márgenes y el padding de los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* Gris suave */
+    color: #333;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4CAF50; /* Verde suave */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Estilo para la sección de introducción */
+#intro {
+    padding: 30px;
+    background-color: #e8f5e9; /* Verde muy claro */
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilos para la sección de beneficios */
+.beneficios-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-section h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los items de los beneficios */
+.beneficio-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #4CAF50;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.beneficio-item h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.beneficio-item:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-5px); /* Efecto de desplazamiento */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hacer la página responsiva */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #intro h2 {
+        font-size: 1.8em;
+    }
+
+    .beneficio-item h3 {
+        font-size: 1.5em;
+    }
+
+    .beneficio-item p {
+        font-size: 1em;
+    }
+}
